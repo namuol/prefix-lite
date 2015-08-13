@@ -1,0 +1,28 @@
+{
+  "name": "prefix-lite",
+  "version": "0.0.1",
+  "description": "prefix your CSS in JS without bloating your bundles",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "babel-node test | tap-difflet",
+    "prepublish": "npm run build",
+    "build": "babel src -d lib"
+  },
+  "keywords": [
+    "prefix",
+    "css",
+    "autoprefix",
+    "lightweight",
+    "lite",
+    "light",
+    "weight",
+    "browser"
+  ],
+  "author": "Louis Acresti <louis.acresti@gmail.com> (http://namuol.github.io)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^5.8.20",
+    "tap-difflet": "^0.3.0",
+    "tape": "^4.0.2"
+  }
+}
