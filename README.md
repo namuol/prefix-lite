@@ -53,4 +53,6 @@ MIT
 
 ## Install
 
+```sh
 npm install prefix-lite
+```
