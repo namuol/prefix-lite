@@ -47,6 +47,11 @@ This project is for people who need to render dynamic styles **in the browser**,
 
 Autoprefix was never really meant to run client-side; bundling it will add **several megabytes** to your bundle size.
 
+## Why not just use -prefix-free, et al?
+
+`-prefix-free` is an awesome solution, but wont solve your problem if you want to serve static CSS that 
+is immediately-viewable; furthermore, if you serve your CSS over HTTPS, many browsers will throw security exceptions.
+
 ## License
 
 MIT
