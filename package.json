@@ -2,7 +2,7 @@
   "name": "prefix-lite",
   "version": "0.0.1",
   "description": "prefix your CSS in JS without bloating your bundles",
-  "main": "lib/index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "babel-node test | tap-difflet",
     "prepublish": "npm run build",
