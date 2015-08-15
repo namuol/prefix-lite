@@ -26,4 +26,16 @@ describe('flexbox_IE2012', (it) => {
     t.end();
   });
 
+  it('should properly handle alignItems: center', (t) => {
+    const actual = flexbox_IE2012('alignItems', 'center');
+    const expected = {
+      MsFlexAlign: 'center',
+    };
+
+    t.deepEqual(actual, expected);
+
+    t.end();
+  });
+
+
 });

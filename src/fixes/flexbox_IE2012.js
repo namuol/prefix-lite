@@ -53,7 +53,12 @@ export default function flexbox_IE2012 (prop, value) {
       return result;
     }
 
-    return Object.assign(result, renameValue(prop, propertyResults[prop]));
+    const base = {};
+    base[prop] = propertyResults[prop];
+    
+    const withRenamedValues = renameValue(prop, propertyResults[prop]);
+
+    return Object.assign(result, base, withRenamedValues);
   }, {});
 
   return result;
