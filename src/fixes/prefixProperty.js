@@ -7,6 +7,7 @@ const ALL = [
 
 const WEBKIT = ['Webkit'];
 const WEBKIT_MOZ = ['Webkit', 'Moz'];
+const WEBKIT_MS = ['Webkit', 'Ms'];
 
 const DEFAULT_CONFIG = {
   propertyPrefixes: {
@@ -25,10 +26,10 @@ const DEFAULT_CONFIG = {
     'backfaceVisibility': WEBKIT_MOZ,
     'contentColumns': ALL,
     'filter': WEBKIT,
-    'flexDirection': WEBKIT,
+    'flexDirection': WEBKIT_MS,
     'flexGrow': WEBKIT,
     'flexShrink': WEBKIT,
-    'flexWrap': WEBKIT,
+    'flexWrap': WEBKIT_MS,
     'justifyContent': WEBKIT,
     'perspective': ALL,
     'perspectiveOrigin': ALL,
