@@ -1,6 +1,7 @@
 const DEFAULT_CONFIG = {
   alternateValues: {
     'flex': [
+      '-webkit-box',
       '-webkit-flex',
     ],
   },
