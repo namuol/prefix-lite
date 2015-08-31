@@ -17,18 +17,21 @@ const DEFAULT_CONFIG = {
 export function config ({mutators}) {
   return function prefixLite (style) {
     return Object.keys(style).reduce((result, prop) => {
+      const styleProp = style[prop];
 
       return mutators.reduce((result, mutate) => {
-        if (!Array.isArray(style[prop])) {
-          return merge(result, mutate(prop, style[prop]));
-        } else {
-          return style[prop].reduce((result, value) => {
+        if (Array.isArray(styleProp)) {
+          return styleProp.reduce((result, value) => {
             return merge(result, mutate(prop, value));
           }, result);
+        } else if (typeof styleProp === 'object') {
+          result[prop] = prefixLite(styleProp);
+          return result;
+        } else {
+          return merge(result, mutate(prop, styleProp));
         }
       }, result);
 
-      return merge(style, mutantProperties);
     }, style);
   };
 }
