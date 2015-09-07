@@ -1,6 +1,6 @@
 {
   "name": "prefix-lite",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "prefix your CSS in JS without bloating your bundles",
   "main": "./lib/index.js",
   "scripts": {
