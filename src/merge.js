@@ -22,5 +22,5 @@ export default function merge (a, b) {
     }
 
     return result;
-  }, Object.assign({},a,b));
+  }, {...a, ...b});
 }

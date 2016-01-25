@@ -46,7 +46,7 @@ export default function flexbox_IE2012 (prop, value) {
   const base = {};
   base[prop] = value;
 
-  const propertyResults = Object.assign(base, renameProperty(prop, value));
+  const propertyResults = {...base, ...renameProperty(prop, value)};
 
   const result = Object.keys(propertyResults).reduce((result, prop) => {
     if (Object.keys(FLEX_PROPERTIES).indexOf(prop) > -1) {
@@ -55,10 +55,10 @@ export default function flexbox_IE2012 (prop, value) {
 
     const base = {};
     base[prop] = propertyResults[prop];
-    
+
     const withRenamedValues = renameValue(prop, propertyResults[prop]);
 
-    return Object.assign(result, base, withRenamedValues);
+    return {...result, ...base, ...withRenamedValues};
   }, {});
 
   return result;
