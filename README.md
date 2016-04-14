@@ -1,3 +1,9 @@
+**THIS PACKAGE IS NO LONGER MAINTAINED**
+
+Use **[rofrischmann/inline-style-prefix-all](https://github.com/rofrischmann/inline-style-prefix-all)** instead! :heart:
+
+----
+
 # prefix-lite
 
 **NOTE:** This is experimental software; please [report issues](https://github.com/namuol/prefix-lite/issues).
