@@ -1,6 +1,6 @@
 **THIS PACKAGE IS NO LONGER MAINTAINED**
 
-Use **[rofrischmann/inline-style-prefix-all](https://github.com/rofrischmann/inline-style-prefix-all)** instead! :heart:
+Use **[rofrischmann/inline-style-prefixer](https://github.com/rofrischmann/inline-style-prefixer)** instead! :heart:
 
 ----
 
